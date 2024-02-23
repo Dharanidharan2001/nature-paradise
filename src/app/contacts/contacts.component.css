@@ -1,0 +1,66 @@
+body {
+    background-color: #09000b;
+    font-family: "Nunito", sans-serif;
+  }
+
+  
+.center-container{
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .container {
+    margin-top: 4%;
+    padding: 20px 10;
+    justify-content: center;
+  }
+  
+  
+  .body-text {
+    margin-left: 15%;
+    font-size: 18px;
+    padding: 15px;
+  
+  }
+
+  .profile {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .profile h2 {
+    color: #0a0a0a;
+  }
+  
+  .profile p {
+    color: rgba(10, 10, 10, 0.8);
+  }
+  
+  .profile .image {
+    width: 75px;
+    height: 75px;
+    background: red;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transform-origin: bottom left;
+    box-shadow: 0 3px 15px rgba(10, 10, 10, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-anime-girl-in-a-neon-shirt-with-blue-hair-image_2563735.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .profile:hover .image {
+    transform: scale(1.5);
+    border-radius: 10px;
+  }
+  

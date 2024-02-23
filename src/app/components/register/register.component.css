@@ -1,0 +1,25 @@
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to full viewport height */ 
+    background-image: url('https://w0.peakpx.com/wallpaper/694/196/HD-wallpaper-green-leaves-close-up-plants-nature.jpg');
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  p-card {
+    width: 300px; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the card */
+    padding: 20px; /* Add padding to the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  }
+  
+  ::ng-deep #card .p-card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,  rgb(227, 228, 228) 0px 0px 0px 1px inset;
+    background-color: transparent; 
+  }

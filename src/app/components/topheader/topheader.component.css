@@ -1,0 +1,10 @@
+/* Add this CSS to style the new top-header section */
+.top-header {
+    background-color: #8ccf68; /* Adjust the background color as needed */
+    color: #0d0e0c; /* Adjust the text color as needed */
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.top-header h1 {
+    margin: 15;
+}

@@ -1,0 +1,15 @@
+<p-toast></p-toast>
+<app-topheader></app-topheader>
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="body-text">
+    <div class="center-container">
+      <h1>FeedBack Form</h1>
+      <br><br>
+        <textarea placeholder="Type your FeedBack!!" pKeyFilter="int" rows="8" cols="80" pInputTextarea [(ngModel)]="feedbackContent"> </textarea><br><br>
+        <p-button (onClick)="submitFeedback()">Submit</p-button>
+      </div>
+      <div class="justify-align">
+      </div>
+      
+</div>

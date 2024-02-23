@@ -1,0 +1,95 @@
+<!-- <div class="top-header">
+    <div class="container">
+        <img src="assets/mylogo.png" alt="Logo" class="logo">
+        <h1>Nature Paradise</h1>
+    </div>
+</div>
+<div class="fixed-header">
+</div>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Paradise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Adjust to your needs */
+    }
+
+    .logo {
+      max-width: 50px; /* Adjust the size of the logo as needed */
+      margin-right: 10px; /* Adjust the spacing between logo and heading */
+      border-radius: 50%;
+
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .fixed-header {
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-header">
+  <div class="container">
+    <img src="assets/mylogo.png" alt="Logo" class="logo">
+    <h1>Nature Paradise</h1>
+  </div>
+</div>
+
+<div class="fixed-header" id="fixedHeader">
+  <div class="container">
+    <img src="assets/mylogo.png" alt="Logo" class="logo">
+    <h1>Nature Paradise</h1>
+  </div>
+</div>
+
+<!-- Your existing content goes here -->
+
+<script>
+  window.addEventListener('scroll', function() {
+    var fixedHeader = document.getElementById('fixedHeader');
+    var topHeader = document.querySelector('.top-header');
+
+    if (window.pageYOffset > topHeader.offsetHeight) {
+      fixedHeader.style.display = 'block';
+    } else {
+      fixedHeader.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>

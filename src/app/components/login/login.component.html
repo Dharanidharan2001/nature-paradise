@@ -1,0 +1,24 @@
+<!-- login.component.html -->
+<p-toast></p-toast>
+<app-topheader></app-topheader>
+
+
+<div class="login-container">
+  <p-card id="card">
+    <h3>Login Form</h3>
+    <form >
+      <div class="p-field">
+        <label for="email">Email:</label>
+        <input type="text" id="email" pInputText [(ngModel)]="credentials.email" name="email" required>
+      </div>
+    
+      <div class="p-field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" pPassword [(ngModel)]="credentials.password" name="password" required>
+      </div> <br>
+    
+      <p-button (click)="onSubmit()">Login</p-button> &nbsp;
+      <p-button routerLink="/Register" [link]="true">register</p-button>
+    </form>
+  </p-card>
+</div>

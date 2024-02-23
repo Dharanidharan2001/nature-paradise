@@ -1,0 +1,32 @@
+<!-- register.component.html -->
+<p-toast></p-toast>
+<app-topheader></app-topheader>
+<div class="register-container">
+  <p-card id="card">
+    <h3>Registration Form</h3>
+    <form>
+      <div class="p-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" pInputText [(ngModel)]="userDetails.name" name="name" required>
+      </div>
+
+      <div class="p-field">
+        <label for="email">Email:</label>
+        <input type="text" id="email" pInputText [(ngModel)]="userDetails.email" name="email" required>
+      </div>
+
+      <div class="p-field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" pPassword [(ngModel)]="userDetails.password" name="password" required>
+      </div>
+
+      <div class="p-field">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" pPassword [(ngModel)]="userDetails.confirmPassword" name="confirmPassword" required>
+      </div><br>
+
+      <button (click)="onSubmit()" pButton>Register</button>
+      <p-button routerLink="/login" [link]="true">Login</p-button>
+    </form>
+  </p-card>
+</div>

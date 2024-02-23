@@ -1,0 +1,49 @@
+<div class="fixed-header">
+    <app-topheader></app-topheader>
+    <p-menubar id="menu" [model]="items">
+        <ng-template pTemplate="start">
+        </ng-template>
+        <ng-template pTemplate="end">
+            <p-avatar [style]="{ 'background-color': '#2196F3', color: '#ffffff' }" (click)="menu.toggle($event)"
+                label={{avatarLabel}} styleClass="mr-1 cursor-pointer" size="large" shape="circle"></p-avatar>
+        </ng-template>
+    </p-menubar>
+
+    <p-menu #menu [model]="menuitems" [popup]="true"></p-menu>
+</div>
+
+
+<!-- <p-dialog [(visible)]="visible" [modal]="true" [style]="{ width: '50rem' }">
+<ng-template pTemplate="header">
+<div class="text-align: center">
+    Contacts
+</div>
+</ng-template>
+    <div class="m-0">
+        <div class="container">
+            <div class="profile">
+                <div class="image"></div>
+                <h2>{{NameDetails}}</h2>
+
+                <p><b>Email:</b> {{EmailDetails}}</p>
+            </div>
+        </div>
+        <p-button (click)="visible = false" label="close" pAutoFocus [autofocus]="true"></p-button>
+    </div>
+</p-dialog> -->
+
+
+
+<!-- <p-sidebar [(visible)]="sidebarVisible" [style]="{'width':'40%'}" position="right">
+    <ng-template pTemplate="header">
+        Feedback
+    </ng-template>
+
+    <div>
+        <form >
+            <textarea rows="10" cols="85" pInputTextarea formControlName="text"></textarea>
+            <br><br>
+            <p-button>Submit</p-button>
+        </form>
+     </div> 
+</p-sidebar> -->

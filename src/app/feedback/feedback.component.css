@@ -1,0 +1,20 @@
+.body-text {
+    margin-left: 11%;
+    font-size: 18px;
+    padding: 3%;
+  }
+
+  .center-container{
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .justify-align{
+    /* text-align:left; */
+    margin-left: 100;
+  }
+
+  ::ng-deep .p-button{
+    margin-right: 45%;
+  }

@@ -1,0 +1,43 @@
+<p-toast></p-toast>
+<!-- <app-topheader></app-topheader> -->
+<app-header class="app-header"></app-header> <br><br><br>
+<app-sidebar></app-sidebar>
+<router-outlet></router-outlet>
+<div class="body-text"  *ngIf="allProducts.length === 0">
+  <div id="flexbox" class="flex flex-column-reverse">
+    <div class="flex align-items-center justify-content-center h-4rem bg-primary font-bold border-round m-2">
+      <img src="../../../assets/Home-n.png" alt="" width="1400" height="700">
+    </div>
+  </div>
+</div>
+<div class="body-text"  *ngIf="allProducts.length > 0">
+  
+  <div *ngIf="allProducts.length > 0">
+    <div class="card-container">
+      <div class="card" *ngFor="let product of allProducts" (click)="navigateToProductDetails(product.id)">
+        <img [src]="product.imageUrl" alt="{{ product.name }} Image" width="100" height="100">
+        <p>Name: {{ product.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div *ngIf="bonsaiProducts.length > 0">
+    <h2>Bonsai Products</h2>
+    <div class="card-container">
+      <div class="card" *ngFor="let product of bonsaiProducts">
+        <p>Name: {{ product.name }}</p>
+        <img [src]="product.imageUrl" alt="{{ product.name }} Image" width="100" height="100">
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div *ngIf="flowerSaplingProducts.length > 0">
+    <h2>Flower Sapling Products</h2>
+    <div class="card-container">
+      <div class="card" *ngFor="let product of flowerSaplingProducts">
+        <p>Name: {{ product.name }}</p>
+        <img [src]="product.imageUrl" alt="{{ product.name }} Image" width="100" height="100">
+      </div>
+    </div>
+  </div> -->
+</div>
